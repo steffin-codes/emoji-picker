@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+body {
+  font-family: Raleway;
+  font-size: 2em;
+  overflow-x: hidden;
+}
+body h1,
+body h2 {
+  text-align: center;
+  padding-top: 1em;
+}
+body h1 {
+  font-size: 1.2em;
+}
+body h2 {
+  font-size: 0.8em;
+  padding-top: 0.5em;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  background: black;
+}
+body::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 20px;
+  border: 3px solid black;
+}
+
+.hide {
+  transform: scale(0);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5em;
+}
+.buttons button {
+  background: black;
+  color: white;
+  border: none;
+  font-size: 1em;
+  margin: 0.2em 0.8em;
+  padding: 0.2em 0.8em;
+  border-radius: 1em;
+  outline: none;
+  box-shadow: none;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container > span {
+  margin: 0.5em;
+  padding: 0.5em;
+  border: solid black 1px;
+  border-radius: 20%;
+}
+.container > span:hover {
+  background: #eee;
+}
+.container > span:active {
+  background: #555;
+}
+.container > span::selection {
+  background: transparent;
+}
+
+.emoji-bread {
+  font-size: 0.5em;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  margin: 1em;
+}
+
+.emoji-search {
+  display: flex;
+  justify-content: center;
+}
+.emoji-search input {
+  width: 60vmin;
+  padding: 1em;
+  border-radius: 5em;
+  border: solid 1px black;
+  outline: none;
+}
+
+select {
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+ul li + li {
+  margin: 0 1em;
+}
+ul li + li:before {
+  content: ">";
+  margin-right: 1em;
+}
+
+.tooltip {
+  margin: 1em;
+  font-size: 0.5em;
+  position: absolute;
+}
+
+.row {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5em;
+}
+.row textarea {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Picker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="tooltip" id="tooltip"></div>
+
+    <h1>🥳 Emoji Picker 🍉</h1>
+    <h2>✨ Hover and click. 👆 Simple Emoji copier 🐒 And now is sorted 2 ways 🦄 and 🔍search🔍 enabled 👀</h2>
+    <div class="row">
+        <textarea id="countme" rows="5"
+            placeholder="Enter text here with coppied emojis and then post online :)"></textarea>
+    </div>
+    <div class="buttons">
+        <button onclick="chooseJSON(1)">basic</button>
+        <button onclick="chooseJSON(2)">more details</button>
+        <button onclick="chooseJSON(3)">search</button>
+    </div>
+    <ul class="emoji-bread" id="emoji-bread">
+        <li>
+            <select id="emoji-0" name="level-0">
+                <option value="0-0">face</option>
+                <option value="0-1">people</option>
+                <option value="0-2">animals</option>
+                <option value="0-3">food</option>
+                <option value="0-4">place</option>
+                <option value="0-5">activity</option>
+                <option value="0-6">objects</option>
+                <option value="0-7">symbols</option>
+                <option value="0-8">flags</option>
+            </select>
+        </li>
+        <li>
+            <select id="emoji-1" name="level-1">
+                <option value="1-0">face-affection</option>
+                <option value="1-1">face-tongue</option>
+                <option value="1-2">face-hand</option>
+                <option value="1-3">face-neutral-skeptical</option>
+                <option value="1-4">face-sleepy</option>
+                <option value="1-5">face-unwell</option>
+                <option value="1-6">face-hat</option>
+                <option value="1-7">face-glasses</option>
+                <option value="1-8">face-concerned</option>
+                <option value="1-9">face-negative</option>
+                <option value="1-10">face-costume</option>
+                <option value="1-11">cat-face</option>
+                <option value="1-12">monkey-face</option>
+                <option value="1-13">emotion</option>
+            </select>
+        </li>
+    </ul>
+    <div class="emoji-search">
+        <input type="text" id="emoji-search" placeholder="🔍 search emoji..." onkeyup="chooseJSON(3)">
+    </div>
+    </div>
+    <div class="container" id="container">
+        <span>😀</span>
+        <span>😃</span>
+        <span>😁</span>
+        <span>😄</span>
+        <span>😆</span>
+        <span>😅</span>
+        <span>🤣</span>
+        <span>😂</span>
+        <span>🙂</span>
+        <span>🙃</span>
+        <span>😉</span>
+        <span>😊</span>
+        <span>😇</span>
+        <span>🥰</span>
+        <span>😍</span>
+        <span>🤩</span>
+        <span>😘</span>
+        <span>😗</span>
+        <span>😚</span>
+        <span>😙</span>
+    </div>
+</body>
+
+</html>
